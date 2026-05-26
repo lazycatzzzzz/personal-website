@@ -2,17 +2,19 @@
 
 import { useState } from "react";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const images = [
-  { src: "/photos/211ca3ceb9f391ecc36bcedff847203e.jpg", alt: "照片1" },
-  { src: "/photos/358c2b3c78382055f211283702898539.jpg", alt: "照片2" },
-  { src: "/photos/71bc9a9dfde168ad50ff28325aa54fee.jpg", alt: "照片3" },
-  { src: "/photos/73c622b08739a01ba79044abe895db25.jpg", alt: "照片4" },
-  { src: "/photos/c4c4be46364f702a490dc3941648ae5d.jpg", alt: "照片5" },
-  { src: "/photos/cf8c5a85b71e052e66d92ac1ce5c5b98.jpg", alt: "照片6" },
-  { src: "/photos/d02d65c8afdb0c78d8c98a76f596965b.jpg", alt: "照片7" },
-  { src: "/photos/d24af4dbdf62205f12235c7fca8818f8.jpg", alt: "照片8" },
-  { src: "/photos/ed9940533c5aee389c84fda477c357aa.jpg", alt: "照片9" },
-  { src: "/photos/f97cb6796e762ac37173dbd414943011.jpg", alt: "照片10" },
+  { src: `${basePath}/photos/211ca3ceb9f391ecc36bcedff847203e.jpg`, alt: "照片1" },
+  { src: `${basePath}/photos/358c2b3c78382055f211283702898539.jpg`, alt: "照片2" },
+  { src: `${basePath}/photos/71bc9a9dfde168ad50ff28325aa54fee.jpg`, alt: "照片3" },
+  { src: `${basePath}/photos/73c622b08739a01ba79044abe895db25.jpg`, alt: "照片4" },
+  { src: `${basePath}/photos/c4c4be46364f702a490dc3941648ae5d.jpg`, alt: "照片5" },
+  { src: `${basePath}/photos/cf8c5a85b71e052e66d92ac1ce5c5b98.jpg`, alt: "照片6" },
+  { src: `${basePath}/photos/d02d65c8afdb0c78d8c98a76f596965b.jpg`, alt: "照片7" },
+  { src: `${basePath}/photos/d24af4dbdf62205f12235c7fca8818f8.jpg`, alt: "照片8" },
+  { src: `${basePath}/photos/ed9940533c5aee389c84fda477c357aa.jpg`, alt: "照片9" },
+  { src: `${basePath}/photos/f97cb6796e762ac37173dbd414943011.jpg`, alt: "照片10" },
 ];
 
 export default function PhotosPage() {

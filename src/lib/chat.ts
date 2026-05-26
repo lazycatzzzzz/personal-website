@@ -42,7 +42,7 @@ export async function chatWithCat(userMessage: string): Promise<string> {
         Authorization: `Bearer ${MINIMAX_API_KEY}`,
       },
       body: JSON.stringify({
-        model: "MiniMax-Text-01",
+        model: "abab6.5s-chat",
         messages,
       }),
     });

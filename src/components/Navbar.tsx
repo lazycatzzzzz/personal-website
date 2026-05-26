@@ -15,25 +15,33 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-black/5">
       <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="text-lg font-semibold text-gray-900 hover:text-blue-500 transition-colors">
-          个人主页
+        <Link
+          href="/"
+          className="text-lg font-bold tracking-tight"
+        >
+          <span className="gradient-text">lazycat</span>
+          <span className="text-gray-400 font-normal text-sm ml-1">zzzzz</span>
         </Link>
-        <ul className="flex items-center gap-1">
+
+        <ul className="flex items-center gap-0.5">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  className={`relative px-3.5 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                     isActive
-                      ? "bg-blue-50 text-blue-600"
-                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                      ? "text-primary bg-primary/8"
+                      : "text-gray-500 hover:text-gray-800 hover:bg-gray-50"
                   }`}
                 >
                   {item.label}
+                  {isActive && (
+                    <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-primary rounded-full" />
+                  )}
                 </Link>
               </li>
             );

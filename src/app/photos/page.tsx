@@ -31,16 +31,20 @@ export default function PhotosPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-6 py-8">
-        <h1 className="text-xl font-semibold text-center text-gray-900 mb-6">图片集</h1>
+    <div className="min-h-screen bg-slate-50">
+      <div className="hero-gradient-subtle pt-24 pb-8">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h1 className="text-2xl font-bold text-gray-900 mb-2">图片集</h1>
+          <p className="text-sm text-gray-500">记录那些美好的瞬间</p>
+        </div>
+      </div>
 
-        {/* 轮播图容器 */}
-        <div className="bg-white rounded-xl border border-gray-100 overflow-hidden">
-          {/* 图片展示区 */}
+      <div className="max-w-4xl mx-auto px-6 pb-12">
+        {/* Carousel */}
+        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
           <div className="relative h-[400px] md:h-[500px]">
             <div
-              className="flex transition-transform duration-300 ease-out h-full"
+              className="flex transition-transform duration-400 ease-out h-full"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {images.map((image, index) => (
@@ -58,10 +62,10 @@ export default function PhotosPage() {
               ))}
             </div>
 
-            {/* 左右箭头 */}
+            {/* Arrows */}
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full border border-gray-200 flex items-center justify-center transition-colors"
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-xl border border-gray-200 flex items-center justify-center transition-all hover:shadow-md"
               aria-label="上一张"
             >
               <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +74,7 @@ export default function PhotosPage() {
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full border border-gray-200 flex items-center justify-center transition-colors"
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-xl border border-gray-200 flex items-center justify-center transition-all hover:shadow-md"
               aria-label="下一张"
             >
               <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,39 +82,39 @@ export default function PhotosPage() {
               </svg>
             </button>
 
-            {/* 指示器 */}
+            {/* Indicators */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
               {images.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
+                  className={`transition-all duration-300 rounded-full ${
                     index === currentIndex
-                      ? "bg-blue-500"
-                      : "bg-white/60 hover:bg-white"
+                      ? "w-6 h-2 bg-primary"
+                      : "w-2 h-2 bg-white/60 hover:bg-white"
                   }`}
                   aria-label={`跳转到第${index + 1}张`}
                 />
               ))}
             </div>
 
-            {/* 页码 */}
-            <div className="absolute top-4 right-4 bg-gray-900/60 text-white px-2.5 py-1 rounded text-xs">
+            {/* Counter */}
+            <div className="absolute top-4 right-4 bg-black/40 backdrop-blur-sm text-white px-2.5 py-1 rounded-lg text-xs font-medium">
               {currentIndex + 1} / {images.length}
             </div>
           </div>
         </div>
 
-        {/* 缩略图 */}
-        <div className="flex justify-center gap-2 mt-4 overflow-x-auto pb-2">
+        {/* Thumbnails */}
+        <div className="flex justify-center gap-2 mt-5 overflow-x-auto pb-2">
           {images.map((image, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-2 transition-all ${
+              className={`flex-shrink-0 w-16 h-12 rounded-xl overflow-hidden ring-2 ring-offset-2 transition-all ${
                 index === currentIndex
-                  ? "border-blue-500"
-                  : "border-gray-200 hover:border-gray-300"
+                  ? "ring-primary ring-offset-white"
+                  : "ring-transparent hover:ring-gray-300"
               }`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -122,10 +126,6 @@ export default function PhotosPage() {
             </button>
           ))}
         </div>
-
-        <p className="text-center text-gray-400 text-sm mt-4">
-          当前第 {currentIndex + 1} 张，共 {images.length} 张
-        </p>
       </div>
     </div>
   );

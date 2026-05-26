@@ -29,17 +29,16 @@ export default function ChatBubble({ messages }: ChatBubbleProps) {
 
   return (
     <div className="space-y-3 max-w-md mx-auto">
-      {visibleMessages.map((msg, index) => (
+      {visibleMessages.map((msg) => (
         <div
           key={msg.id}
           className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
-          style={{ animationDelay: `${index * 0.1}s` }}
         >
           <div
-            className={`max-w-xs px-4 py-2 rounded-2xl text-sm ${
+            className={`max-w-xs px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
               msg.role === "user"
-                ? "bg-orange-400 text-white rounded-br-sm"
-                : "bg-white text-gray-800 border border-gray-100 rounded-bl-sm shadow-sm"
+                ? "bg-gradient-to-r from-primary to-accent text-white rounded-br-md shadow-sm"
+                : "bg-gray-100 text-gray-700 rounded-bl-md"
             }`}
           >
             {msg.content}

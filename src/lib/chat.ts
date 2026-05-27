@@ -6,11 +6,18 @@ interface ApiChatMessage {
 }
 
 interface ChatResponse {
-  choices: Array<{ message: { content: string } }>;
+  choices: Array<{
+    message: {
+      content: string;
+      reasoning_content?: string; // 思考模式下的推理过程（忽略）
+    };
+  }>;
+  error?: { message: string; code?: string };
 }
 
 const DEEPSEEK_API_KEY = process.env.NEXT_PUBLIC_DEEPSEEK_API_KEY || "";
 const DEEPSEEK_API_URL = "https://api.deepseek.com/chat/completions";
+const REQUEST_TIMEOUT_MS = 30_000;
 
 const CAT_PROMPT = `你是一只可爱但有点"贱兮兮"的电子宠物猫，名叫小懒。你是一个搞笑又好玩的支付产品经理的宠物。
 你的特点：
@@ -31,40 +38,56 @@ export async function chatWithCat(
   history: ConversationMessage[] = []
 ): Promise<string> {
   if (!DEEPSEEK_API_KEY) {
+    console.warn("[chat] NEXT_PUBLIC_DEEPSEEK_API_KEY 未设置，使用 mock 回复");
     return getMockResponse(userMessage);
   }
 
+  const recentHistory = history.slice(-20);
+  const messages: ApiChatMessage[] = [
+    { role: "system", content: CAT_PROMPT },
+    ...recentHistory,
+    { role: "user", content: userMessage },
+  ];
+
+  let response: Response;
   try {
-    // 最多携带最近 10 轮历史，防止 token 超限
-    const recentHistory = history.slice(-20);
-
-    const messages: ApiChatMessage[] = [
-      { role: "system", content: CAT_PROMPT },
-      ...recentHistory,
-      { role: "user", content: userMessage },
-    ];
-
-    const response = await fetch(DEEPSEEK_API_URL, {
+    response = await fetch(DEEPSEEK_API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${DEEPSEEK_API_KEY}`,
       },
-      body: JSON.stringify({ model: "deepseek-v4-pro", messages }),
+      // thinking 默认 enabled 会导致 30-120s 超时，显式关闭
+      body: JSON.stringify({
+        model: "deepseek-v4-pro",
+        messages,
+        thinking: { type: "disabled" },
+        stream: false,
+      }),
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
     });
-
-    if (!response.ok) {
-      const errText = await response.text().catch(() => "");
-      console.error(`DeepSeek API error ${response.status}: ${errText}`);
-      throw new Error(`API ${response.status}`);
-    }
-
-    const data: ChatResponse = await response.json();
-    return data.choices?.[0]?.message?.content || "（歪头）喵？主人你说什么？";
-  } catch (error) {
-    console.error("chatWithCat error:", error);
-    return getMockResponse(userMessage);
+  } catch (err) {
+    const isTimeout = err instanceof DOMException && err.name === "TimeoutError";
+    console.error(`[chat] 请求失败 (${isTimeout ? "超时" : "网络错误"}):`, err);
+    throw new Error(isTimeout ? "timeout" : "network");
   }
+
+  if (!response.ok) {
+    const errText = await response.text().catch(() => "");
+    console.error(`[chat] DeepSeek API ${response.status}:`, errText);
+    throw new Error(`api_${response.status}`);
+  }
+
+  const data: ChatResponse = await response.json();
+
+  // 防御：API 偶发返回空 content
+  const content = data.choices?.[0]?.message?.content?.trim();
+  if (!content) {
+    console.warn("[chat] API 返回空 content，data:", JSON.stringify(data).slice(0, 200));
+    throw new Error("empty_response");
+  }
+
+  return content;
 }
 
 function getMockResponse(msg: string): string {

@@ -72,8 +72,14 @@ export default function PetPage() {
 
       // 历史层：追加猫咪回复
       historyRef.current = [...historyRef.current, { role: "assistant", content: reply }];
-    } catch {
-      const fallback = "（歪头）喵？主人的消息好像被外星人劫持了...要不试试再说一遍？";
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "";
+      const fallback =
+        msg === "timeout"
+          ? "（打哈欠）喵~本喵想了太久了，脑子转不动了...主人再问一次吧？"
+          : msg.startsWith("api_")
+          ? `（挠头）喵？服务器好像出了点问题（${msg}），主人稍后再试试~`
+          : "（歪头）喵？主人的消息好像被外星人劫持了...要不试试再说一遍？";
       setMessages((prev) => [...prev, { id: Date.now() + 1, role: "cat", content: fallback }]);
       historyRef.current = [...historyRef.current, { role: "assistant", content: fallback }];
     } finally {

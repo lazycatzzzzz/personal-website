@@ -1,56 +1,39 @@
-name: Deploy to GitHub Pages
+name: Deploy to Cloudflare Pages
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      deployments: write
+
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20'
           cache: npm
-
-      - name: Set site URL
-        id: vars
-        run: |
-          REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
-          if [ "$REPO_NAME" = "lazycatzzzzz.github.io" ]; then
-            echo "BASE_PATH=" >> $GITHUB_ENV
-            echo "SITE_URL=https://lazycatzzzzz.github.io" >> $GITHUB_ENV
-          else
-            echo "BASE_PATH=/$REPO_NAME" >> $GITHUB_ENV
-            echo "SITE_URL=https://lazycatzzzzz.github.io/$REPO_NAME" >> $GITHUB_ENV
-          fi
 
       - run: npm ci
 
-      - run: npm run build
+      - name: Build
+        run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: ${{ env.BASE_PATH }}
-          NEXT_PUBLIC_SITE_URL: ${{ env.SITE_URL }}
+          NEXT_PUBLIC_BASE_PATH: ""
+          NEXT_PUBLIC_SITE_URL: "https://personal-website.pages.dev"
           NEXT_PUBLIC_DEEPSEEK_API_KEY: ${{ secrets.NEXT_PUBLIC_DEEPSEEK_API_KEY }}
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
         with:
-          path: out
-
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: personal-website
+          directory: out
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

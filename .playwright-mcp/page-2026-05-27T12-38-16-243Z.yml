@@ -1,0 +1,617 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Flazycatzzzzz%2Fpersonal-website
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=lazycatzzzzz%2Fpersonal-website
+            - button "Appearance settings" [ref=e58] [cursor=pointer]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "lazycatzzzzz" [ref=e70] [cursor=pointer]:
+            - /url: /lazycatzzzzz
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "personal-website" [ref=e73] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                - /url: /login?return_to=%2Flazycatzzzzz%2Fpersonal-website
+                - img [ref=e78]
+                - text: Notifications
+            - listitem [ref=e80]:
+              - link "Fork 0" [ref=e81] [cursor=pointer]:
+                - /url: /login?return_to=%2Flazycatzzzzz%2Fpersonal-website
+                - img [ref=e82]
+                - text: Fork
+                - generic "0" [ref=e84]
+            - listitem [ref=e85]:
+              - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Flazycatzzzzz%2Fpersonal-website
+                - img [ref=e88]
+                - text: Star
+                - generic "0 users starred this repository" [ref=e90]: "0"
+      - navigation "Repository" [ref=e91]:
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link "Code" [ref=e94] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website
+              - img [ref=e95]
+              - generic [ref=e97]: Code
+          - listitem [ref=e98]:
+            - link "Issues" [ref=e99] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website/issues
+              - img [ref=e100]
+              - generic [ref=e103]: Issues
+          - listitem [ref=e104]:
+            - link "Pull requests" [ref=e105] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website/pulls
+              - img [ref=e106]
+              - generic [ref=e108]: Pull requests
+          - listitem [ref=e109]:
+            - link "Actions" [ref=e110] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website/actions
+              - img [ref=e111]
+              - generic [ref=e113]: Actions
+          - listitem [ref=e114]:
+            - link "Projects" [ref=e115] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website/projects
+              - img [ref=e116]
+              - generic [ref=e118]: Projects
+          - listitem [ref=e119]:
+            - link "Security and quality" [ref=e120] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website/security
+              - img [ref=e121]
+              - generic [ref=e123]: Security and quality
+          - listitem [ref=e124]:
+            - link "Insights" [ref=e125] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website/pulse
+              - img [ref=e126]
+              - generic [ref=e128]: Insights
+    - generic [ref=e141]:
+      - heading "lazycatzzzzz/personal-website" [level=1] [ref=e143]
+      - generic [ref=e144]:
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - button "main branch" [ref=e151] [cursor=pointer]:
+                - generic [ref=e152]:
+                  - generic [ref=e154]:
+                    - img [ref=e156]
+                    - generic [ref=e159]: main
+                  - generic:
+                    - img
+              - generic [ref=e160]:
+                - link "1 Branch" [ref=e161] [cursor=pointer]:
+                  - /url: /lazycatzzzzz/personal-website/branches
+                  - generic [ref=e162]:
+                    - generic:
+                      - img
+                    - generic [ref=e164]:
+                      - strong [ref=e165]: "1"
+                      - text: Branch
+                - link "0 Tags" [ref=e166] [cursor=pointer]:
+                  - /url: /lazycatzzzzz/personal-website/tags
+                  - generic [ref=e167]:
+                    - generic:
+                      - img
+                    - generic [ref=e169]:
+                      - strong [ref=e170]: "0"
+                      - text: Tags
+            - generic [ref=e171]:
+              - generic [ref=e175]:
+                - img [ref=e177]
+                - combobox "Go to file" [ref=e179]
+              - button "Code" [ref=e180] [cursor=pointer]:
+                - generic [ref=e181]:
+                  - generic:
+                    - img
+                  - generic [ref=e182]: Code
+                  - generic:
+                    - img
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - heading "Folders and files" [level=2] [ref=e185]
+              - table "Folders and files" [ref=e186]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e187]:
+                  - 'row "Latest commit lazycatzzzzz commits by lazycatzzzzz ci: 恢复 GitHub Pages 工作流；添加 vercel.json 支持 Vercel 部署 success Commit 8cc1834 · May 27, 20263 minutes ago History 11 Commits" [ref=e188]':
+                    - 'cell "Latest commit lazycatzzzzz commits by lazycatzzzzz ci: 恢复 GitHub Pages 工作流；添加 vercel.json 支持 Vercel 部署 success Commit 8cc1834 · May 27, 20263 minutes ago History 11 Commits" [ref=e189]':
+                      - generic [ref=e190]:
+                        - heading "Latest commit" [level=2] [ref=e191]
+                        - generic [ref=e192]:
+                          - generic [ref=e194]:
+                            - link "lazycatzzzzz" [ref=e195] [cursor=pointer]:
+                              - /url: /lazycatzzzzz
+                              - img "lazycatzzzzz" [ref=e196]
+                            - link "commits by lazycatzzzzz" [ref=e197] [cursor=pointer]:
+                              - /url: /lazycatzzzzz/personal-website/commits?author=lazycatzzzzz
+                              - text: lazycatzzzzz
+                          - generic [ref=e198]:
+                            - 'link "ci: 恢复 GitHub Pages 工作流；添加 vercel.json 支持 Vercel 部署" [ref=e201] [cursor=pointer]':
+                              - /url: /lazycatzzzzz/personal-website/commit/8cc183469c0e0ee53e898e35dc0ad51e8286a59a
+                            - button "success" [ref=e202] [cursor=pointer]:
+                              - img [ref=e203]
+                        - generic [ref=e205]:
+                          - generic [ref=e207]:
+                            - link "Commit 8cc1834" [ref=e208] [cursor=pointer]:
+                              - /url: /lazycatzzzzz/personal-website/commit/8cc183469c0e0ee53e898e35dc0ad51e8286a59a
+                              - text: 8cc1834
+                            - text: ·
+                            - generic "May 27, 2026, 8:34 PM GMT+8" [ref=e209]: May 27, 20263 minutes ago
+                          - generic [ref=e210]:
+                            - heading "History" [level=2] [ref=e211]
+                            - link "11 Commits" [ref=e212] [cursor=pointer]:
+                              - /url: /lazycatzzzzz/personal-website/commits/main/
+                              - generic [ref=e213]:
+                                - generic:
+                                  - img
+                                - generic [ref=e214]: 11 Commits
+                  - 'row ".github/workflows, (Directory) ci: 恢复 GitHub Pages 工作流；添加 vercel.json 支持 Vercel 部署 May 27, 20263 minutes ago" [ref=e215]':
+                    - cell ".github/workflows, (Directory)" [ref=e216]:
+                      - generic [ref=e217]:
+                        - img [ref=e218]
+                        - link ".github/workflows, (Directory)" [ref=e223] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/tree/main/.github/workflows
+                          - text: .github/workflows
+                    - 'cell "ci: 恢复 GitHub Pages 工作流；添加 vercel.json 支持 Vercel 部署" [ref=e224]':
+                      - 'link "ci: 恢复 GitHub Pages 工作流；添加 vercel.json 支持 Vercel 部署" [ref=e227] [cursor=pointer]':
+                        - /url: /lazycatzzzzz/personal-website/commit/8cc183469c0e0ee53e898e35dc0ad51e8286a59a
+                    - cell "May 27, 20263 minutes ago" [ref=e228]:
+                      - generic [ref=e229]: May 27, 20263 minutes ago
+                  - 'row "public, (Directory) feat: 升级电子猫形象 + 切换 DeepSeek V4 Pro AI May 27, 202631 minutes ago" [ref=e230]':
+                    - cell "public, (Directory)" [ref=e231]:
+                      - generic [ref=e232]:
+                        - img [ref=e233]
+                        - link "public, (Directory)" [ref=e238] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/tree/main/public
+                          - text: public
+                    - 'cell "feat: 升级电子猫形象 + 切换 DeepSeek V4 Pro AI" [ref=e239]':
+                      - 'link "feat: 升级电子猫形象 + 切换 DeepSeek V4 Pro AI" [ref=e242] [cursor=pointer]':
+                        - /url: /lazycatzzzzz/personal-website/commit/74ec946320ff0f334e160ee4d1a5f726ab0fd4b5
+                    - cell "May 27, 202631 minutes ago" [ref=e243]:
+                      - generic [ref=e244]: May 27, 202631 minutes ago
+                  - 'row "src, (Directory) feat: 升级电子猫形象 + 切换 DeepSeek V4 Pro AI May 27, 202631 minutes ago" [ref=e245]':
+                    - cell "src, (Directory)" [ref=e246]:
+                      - generic [ref=e247]:
+                        - img [ref=e248]
+                        - link "src, (Directory)" [ref=e253] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/tree/main/src
+                          - text: src
+                    - 'cell "feat: 升级电子猫形象 + 切换 DeepSeek V4 Pro AI" [ref=e254]':
+                      - 'link "feat: 升级电子猫形象 + 切换 DeepSeek V4 Pro AI" [ref=e257] [cursor=pointer]':
+                        - /url: /lazycatzzzzz/personal-website/commit/74ec946320ff0f334e160ee4d1a5f726ab0fd4b5
+                    - cell "May 27, 202631 minutes ago" [ref=e258]:
+                      - generic [ref=e259]: May 27, 202631 minutes ago
+                  - 'row ".env.example, (File) feat: 升级电子猫形象 + 切换 DeepSeek V4 Pro AI May 27, 202631 minutes ago" [ref=e260]':
+                    - cell ".env.example, (File)" [ref=e261]:
+                      - generic [ref=e262]:
+                        - img [ref=e263]
+                        - link ".env.example, (File)" [ref=e268] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/.env.example
+                          - text: .env.example
+                    - 'cell "feat: 升级电子猫形象 + 切换 DeepSeek V4 Pro AI" [ref=e269]':
+                      - 'link "feat: 升级电子猫形象 + 切换 DeepSeek V4 Pro AI" [ref=e272] [cursor=pointer]':
+                        - /url: /lazycatzzzzz/personal-website/commit/74ec946320ff0f334e160ee4d1a5f726ab0fd4b5
+                    - cell "May 27, 202631 minutes ago" [ref=e273]:
+                      - generic [ref=e274]: May 27, 202631 minutes ago
+                  - 'row ".gitignore, (File) feat: 改造为 GitHub Pages 静态站点 May 26, 2026yesterday" [ref=e275]':
+                    - cell ".gitignore, (File)" [ref=e276]:
+                      - generic [ref=e277]:
+                        - img [ref=e278]
+                        - link ".gitignore, (File)" [ref=e283] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/.gitignore
+                          - text: .gitignore
+                    - 'cell "feat: 改造为 GitHub Pages 静态站点" [ref=e284]':
+                      - 'link "feat: 改造为 GitHub Pages 静态站点" [ref=e287] [cursor=pointer]':
+                        - /url: /lazycatzzzzz/personal-website/commit/4ca22a049abb6fb883d6dac7e1c4462cd197a192
+                    - cell "May 26, 2026yesterday" [ref=e288]:
+                      - generic [ref=e289]: May 26, 2026yesterday
+                  - row "AGENTS.md, (File) Initial commit from Create Next App May 26, 2026yesterday" [ref=e290]:
+                    - cell "AGENTS.md, (File)" [ref=e291]:
+                      - generic [ref=e292]:
+                        - img [ref=e293]
+                        - link "AGENTS.md, (File)" [ref=e298] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/AGENTS.md
+                          - text: AGENTS.md
+                    - cell "Initial commit from Create Next App" [ref=e299]:
+                      - link "Initial commit from Create Next App" [ref=e302] [cursor=pointer]:
+                        - /url: /lazycatzzzzz/personal-website/commit/4f1fd335ba01d15a309fc0fa10982de97367f75f
+                    - cell "May 26, 2026yesterday" [ref=e303]:
+                      - generic [ref=e304]: May 26, 2026yesterday
+                  - row "CLAUDE.md, (File) Initial commit from Create Next App May 26, 2026yesterday" [ref=e305]:
+                    - cell "CLAUDE.md, (File)" [ref=e306]:
+                      - generic [ref=e307]:
+                        - img [ref=e308]
+                        - link "CLAUDE.md, (File)" [ref=e313] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/CLAUDE.md
+                          - text: CLAUDE.md
+                    - cell "Initial commit from Create Next App" [ref=e314]:
+                      - link "Initial commit from Create Next App" [ref=e317] [cursor=pointer]:
+                        - /url: /lazycatzzzzz/personal-website/commit/4f1fd335ba01d15a309fc0fa10982de97367f75f
+                    - cell "May 26, 2026yesterday" [ref=e318]:
+                      - generic [ref=e319]: May 26, 2026yesterday
+                  - 'row "README.md, (File) feat: 改造为 GitHub Pages 静态站点 May 26, 2026yesterday" [ref=e320]':
+                    - cell "README.md, (File)" [ref=e321]:
+                      - generic [ref=e322]:
+                        - img [ref=e323]
+                        - link "README.md, (File)" [ref=e328] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/README.md
+                          - text: README.md
+                    - 'cell "feat: 改造为 GitHub Pages 静态站点" [ref=e329]':
+                      - 'link "feat: 改造为 GitHub Pages 静态站点" [ref=e332] [cursor=pointer]':
+                        - /url: /lazycatzzzzz/personal-website/commit/4ca22a049abb6fb883d6dac7e1c4462cd197a192
+                    - cell "May 26, 2026yesterday" [ref=e333]:
+                      - generic [ref=e334]: May 26, 2026yesterday
+                  - row "eslint.config.mjs, (File) Initial commit from Create Next App May 26, 2026yesterday" [ref=e335]:
+                    - cell "eslint.config.mjs, (File)" [ref=e336]:
+                      - generic [ref=e337]:
+                        - img [ref=e338]
+                        - link "eslint.config.mjs, (File)" [ref=e343] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/eslint.config.mjs
+                          - text: eslint.config.mjs
+                    - cell "Initial commit from Create Next App" [ref=e344]:
+                      - link "Initial commit from Create Next App" [ref=e347] [cursor=pointer]:
+                        - /url: /lazycatzzzzz/personal-website/commit/4f1fd335ba01d15a309fc0fa10982de97367f75f
+                    - cell "May 26, 2026yesterday" [ref=e348]:
+                      - generic [ref=e349]: May 26, 2026yesterday
+                  - 'row "next.config.ts, (File) feat: 改造为 GitHub Pages 静态站点 May 26, 2026yesterday" [ref=e350]':
+                    - cell "next.config.ts, (File)" [ref=e351]:
+                      - generic [ref=e352]:
+                        - img [ref=e353]
+                        - link "next.config.ts, (File)" [ref=e358] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/next.config.ts
+                          - text: next.config.ts
+                    - 'cell "feat: 改造为 GitHub Pages 静态站点" [ref=e359]':
+                      - 'link "feat: 改造为 GitHub Pages 静态站点" [ref=e362] [cursor=pointer]':
+                        - /url: /lazycatzzzzz/personal-website/commit/4ca22a049abb6fb883d6dac7e1c4462cd197a192
+                    - cell "May 26, 2026yesterday" [ref=e363]:
+                      - generic [ref=e364]: May 26, 2026yesterday
+                  - row "package-lock.json, (File) Initial commit from Create Next App May 26, 2026yesterday" [ref=e365]:
+                    - cell "package-lock.json, (File)" [ref=e366]:
+                      - generic [ref=e367]:
+                        - img [ref=e368]
+                        - link "package-lock.json, (File)" [ref=e373] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/package-lock.json
+                          - text: package-lock.json
+                    - cell "Initial commit from Create Next App" [ref=e374]:
+                      - link "Initial commit from Create Next App" [ref=e377] [cursor=pointer]:
+                        - /url: /lazycatzzzzz/personal-website/commit/4f1fd335ba01d15a309fc0fa10982de97367f75f
+                    - cell "May 26, 2026yesterday" [ref=e378]:
+                      - generic [ref=e379]: May 26, 2026yesterday
+                  - 'row "package.json, (File) feat: 改造为 GitHub Pages 静态站点 May 26, 2026yesterday" [ref=e380]':
+                    - cell "package.json, (File)" [ref=e381]:
+                      - generic [ref=e382]:
+                        - img [ref=e383]
+                        - link "package.json, (File)" [ref=e388] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/package.json
+                          - text: package.json
+                    - 'cell "feat: 改造为 GitHub Pages 静态站点" [ref=e389]':
+                      - 'link "feat: 改造为 GitHub Pages 静态站点" [ref=e392] [cursor=pointer]':
+                        - /url: /lazycatzzzzz/personal-website/commit/4ca22a049abb6fb883d6dac7e1c4462cd197a192
+                    - cell "May 26, 2026yesterday" [ref=e393]:
+                      - generic [ref=e394]: May 26, 2026yesterday
+                  - row "postcss.config.mjs, (File) Initial commit from Create Next App May 26, 2026yesterday" [ref=e395]:
+                    - cell "postcss.config.mjs, (File)" [ref=e396]:
+                      - generic [ref=e397]:
+                        - img [ref=e398]
+                        - link "postcss.config.mjs, (File)" [ref=e403] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/postcss.config.mjs
+                          - text: postcss.config.mjs
+                    - cell "Initial commit from Create Next App" [ref=e404]:
+                      - link "Initial commit from Create Next App" [ref=e407] [cursor=pointer]:
+                        - /url: /lazycatzzzzz/personal-website/commit/4f1fd335ba01d15a309fc0fa10982de97367f75f
+                    - cell "May 26, 2026yesterday" [ref=e408]:
+                      - generic [ref=e409]: May 26, 2026yesterday
+                  - row "tsconfig.json, (File) Initial commit from Create Next App May 26, 2026yesterday" [ref=e410]:
+                    - cell "tsconfig.json, (File)" [ref=e411]:
+                      - generic [ref=e412]:
+                        - img [ref=e413]
+                        - link "tsconfig.json, (File)" [ref=e418] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/tsconfig.json
+                          - text: tsconfig.json
+                    - cell "Initial commit from Create Next App" [ref=e419]:
+                      - link "Initial commit from Create Next App" [ref=e422] [cursor=pointer]:
+                        - /url: /lazycatzzzzz/personal-website/commit/4f1fd335ba01d15a309fc0fa10982de97367f75f
+                    - cell "May 26, 2026yesterday" [ref=e423]:
+                      - generic [ref=e424]: May 26, 2026yesterday
+                  - 'row "vercel.json, (File) ci: 恢复 GitHub Pages 工作流；添加 vercel.json 支持 Vercel 部署 May 27, 20263 minutes ago" [ref=e425]':
+                    - cell "vercel.json, (File)" [ref=e426]:
+                      - generic [ref=e427]:
+                        - img [ref=e428]
+                        - link "vercel.json, (File)" [ref=e433] [cursor=pointer]:
+                          - /url: /lazycatzzzzz/personal-website/blob/main/vercel.json
+                          - text: vercel.json
+                    - 'cell "ci: 恢复 GitHub Pages 工作流；添加 vercel.json 支持 Vercel 部署" [ref=e434]':
+                      - 'link "ci: 恢复 GitHub Pages 工作流；添加 vercel.json 支持 Vercel 部署" [ref=e437] [cursor=pointer]':
+                        - /url: /lazycatzzzzz/personal-website/commit/8cc183469c0e0ee53e898e35dc0ad51e8286a59a
+                    - cell "May 27, 20263 minutes ago" [ref=e438]:
+                      - generic [ref=e439]: May 27, 20263 minutes ago
+            - generic [ref=e441]:
+              - generic [ref=e442]:
+                - heading "Repository files navigation" [level=2] [ref=e443]
+                - navigation "Repository files" [ref=e444]:
+                  - list [ref=e445]:
+                    - listitem [ref=e446]:
+                      - link "README" [ref=e447] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e449]
+                        - generic [ref=e451]: README
+                - button "Outline" [ref=e452] [cursor=pointer]:
+                  - img [ref=e453]
+              - article [ref=e456]:
+                - generic [ref=e457]:
+                  - heading "lazycatzzzzz 个人主页" [level=1] [ref=e458]
+                  - 'link "Permalink: lazycatzzzzz 个人主页" [ref=e459] [cursor=pointer]':
+                    - /url: "#lazycatzzzzz-个人主页"
+                    - img [ref=e460]
+                - paragraph [ref=e462]: 基于 Next.js 16 + React 19 + Tailwind CSS v4 + TypeScript 构建的个人网站，部署于 GitHub Pages。
+                - generic [ref=e463]:
+                  - heading "功能" [level=2] [ref=e464]
+                  - 'link "Permalink: 功能" [ref=e465] [cursor=pointer]':
+                    - /url: "#功能"
+                    - img [ref=e466]
+                - list [ref=e468]:
+                  - listitem [ref=e469]:
+                    - strong [ref=e470]: 首页
+                    - text: — 导航入口，链接到所有子页面
+                  - listitem [ref=e471]:
+                    - strong [ref=e472]: 电子宠物
+                    - text: — 互动猫猫 + AI 聊天（基于 MiniMax API，无 API key 时使用本地 mock 回复）
+                  - listitem [ref=e473]:
+                    - strong [ref=e474]: 图片集
+                    - text: — 照片轮播，含缩略图导航
+                  - listitem [ref=e475]:
+                    - strong [ref=e476]: 视频作品
+                    - text: — 抖音视频外链集合
+                  - listitem [ref=e477]:
+                    - strong [ref=e478]: 联系我
+                    - text: — 个人介绍与联系方式
+                - generic [ref=e479]:
+                  - heading "本地运行" [level=2] [ref=e480]
+                  - 'link "Permalink: 本地运行" [ref=e481] [cursor=pointer]':
+                    - /url: "#本地运行"
+                    - img [ref=e482]
+                - generic [ref=e484]:
+                  - generic [ref=e485]:
+                    - generic [ref=e486]: "# 安装依赖"
+                    - text: npm install
+                    - generic [ref=e487]: "# 复制环境变量模板并配置"
+                    - text: cp .env.example .env.local
+                    - generic [ref=e488]: "# 启动开发服务器"
+                    - text: npm run dev
+                    - generic [ref=e489]: "# 构建静态站点"
+                    - text: npm run build
+                    - generic [ref=e490]: "# 输出目录: out/"
+                    - generic [ref=e491]: "# 本地预览静态站点"
+                    - text: npx serve out
+                  - button "Copy code to clipboard" [ref=e493] [cursor=pointer]:
+                    - img [ref=e494]
+                - generic [ref=e497]:
+                  - heading "环境变量" [level=2] [ref=e498]
+                  - 'link "Permalink: 环境变量" [ref=e499] [cursor=pointer]':
+                    - /url: "#环境变量"
+                    - img [ref=e500]
+                - table [ref=e503]:
+                  - rowgroup [ref=e504]:
+                    - row "变量 说明 示例" [ref=e505]:
+                      - columnheader "变量" [ref=e506]
+                      - columnheader "说明" [ref=e507]
+                      - columnheader "示例" [ref=e508]
+                  - rowgroup [ref=e509]:
+                    - row "NEXT_PUBLIC_BASE_PATH 项目站点路径前缀，用户站点留空 /personal-website" [ref=e510]:
+                      - cell "NEXT_PUBLIC_BASE_PATH" [ref=e511]:
+                        - code [ref=e512]: NEXT_PUBLIC_BASE_PATH
+                      - cell "项目站点路径前缀，用户站点留空" [ref=e513]
+                      - cell "/personal-website" [ref=e514]:
+                        - code [ref=e515]: /personal-website
+                    - row "NEXT_PUBLIC_SITE_URL 生产环境完整 URL https://lazycatzzzzz.github.io/personal-website" [ref=e516]:
+                      - cell "NEXT_PUBLIC_SITE_URL" [ref=e517]:
+                        - code [ref=e518]: NEXT_PUBLIC_SITE_URL
+                      - cell "生产环境完整 URL" [ref=e519]
+                      - cell "https://lazycatzzzzz.github.io/personal-website" [ref=e520]:
+                        - code [ref=e521]: https://lazycatzzzzz.github.io/personal-website
+                    - row "NEXT_PUBLIC_MINIMAX_API_KEY MiniMax API 密钥（将暴露在客户端） sk-cp-xxx" [ref=e522]:
+                      - cell "NEXT_PUBLIC_MINIMAX_API_KEY" [ref=e523]:
+                        - code [ref=e524]: NEXT_PUBLIC_MINIMAX_API_KEY
+                      - cell "MiniMax API 密钥（将暴露在客户端）" [ref=e525]
+                      - cell "sk-cp-xxx" [ref=e526]:
+                        - code [ref=e527]: sk-cp-xxx
+                - generic [ref=e528]:
+                  - heading "部署到 GitHub Pages" [level=2] [ref=e529]
+                  - 'link "Permalink: 部署到 GitHub Pages" [ref=e530] [cursor=pointer]':
+                    - /url: "#部署到-github-pages"
+                    - img [ref=e531]
+                - list [ref=e533]:
+                  - listitem [ref=e534]:
+                    - text: 在 GitHub 创建仓库
+                    - code [ref=e535]: personal-website
+                  - listitem [ref=e536]:
+                    - text: 推送代码到
+                    - code [ref=e537]: main
+                    - text: 分支
+                  - listitem [ref=e538]:
+                    - text: 在仓库 Settings > Pages > Source 中选择
+                    - strong [ref=e539]: GitHub Actions
+                  - listitem [ref=e540]:
+                    - text: 在 Settings > Secrets and variables > Actions 中添加
+                    - code [ref=e541]: NEXT_PUBLIC_MINIMAX_API_KEY
+                    - text: secret（可选，不设置则使用 mock 回复）
+                  - listitem [ref=e542]: 推送后 GitHub Actions 自动构建并部署
+                - paragraph [ref=e543]:
+                  - text: 部署地址：
+                  - code [ref=e544]: https://lazycatzzzzz.github.io/personal-website
+                - generic [ref=e545]:
+                  - heading "项目结构" [level=2] [ref=e546]
+                  - 'link "Permalink: 项目结构" [ref=e547] [cursor=pointer]':
+                    - /url: "#项目结构"
+                    - img [ref=e548]
+                - generic [ref=e550]:
+                  - code [ref=e552]: "src/ app/ layout.tsx # 根布局（导航栏 + 页脚 + SEO metadata） page.tsx # 首页 contact/page.tsx # 联系我 pet/page.tsx # 电子宠物 + 聊天 photos/page.tsx # 图片轮播 videos/page.tsx # 视频作品 robots.ts # robots.txt 生成 sitemap.ts # sitemap.xml 生成 components/ Navbar.tsx # 导航栏 Footer.tsx # 页脚（含浏览计数） BackToTop.tsx # 回到顶部按钮 Cat.tsx # 纯 CSS 互动猫组件 ChatBubble.tsx # 聊天气泡组件 lib/ chat.ts # MiniMax API 客户端 + mock 回退 analytics.ts # 客户端浏览计数（localStorage） public/ photos/ # 照片静态资源 .nojekyll # 禁用 GitHub Pages Jekyll 处理"
+                  - button "Copy code to clipboard" [ref=e554] [cursor=pointer]:
+                    - img [ref=e555]
+        - generic [ref=e561]:
+          - generic [ref=e564]:
+            - heading "About" [level=2] [ref=e565]
+            - generic [ref=e566]: No description, website, or topics provided.
+            - heading "Resources" [level=3] [ref=e567]
+            - link "Readme" [ref=e569] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e570]
+              - text: Readme
+            - link "Activity" [ref=e573] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website/activity
+              - img [ref=e574]
+              - text: Activity
+            - heading "Stars" [level=3] [ref=e576]
+            - link "0 stars" [ref=e578] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website/stargazers
+              - img [ref=e579]
+              - strong [ref=e581]: "0"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e582]
+            - link "0 watching" [ref=e584] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website/watchers
+              - img [ref=e585]
+              - strong [ref=e587]: "0"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e588]
+            - link "0 forks" [ref=e590] [cursor=pointer]:
+              - /url: /lazycatzzzzz/personal-website/forks
+              - img [ref=e591]
+              - strong [ref=e593]: "0"
+              - text: forks
+            - link "Report repository" [ref=e595] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Flazycatzzzzz%2Fpersonal-website&report=lazycatzzzzz+%28user%29
+          - generic [ref=e597]:
+            - heading "Releases" [level=2] [ref=e598]:
+              - link "Releases" [ref=e599] [cursor=pointer]:
+                - /url: /lazycatzzzzz/personal-website/releases
+            - generic [ref=e600]: No releases published
+          - generic [ref=e602]:
+            - heading "Packages" [level=2] [ref=e603]:
+              - link "Packages" [ref=e604] [cursor=pointer]:
+                - /url: /users/lazycatzzzzz/packages?repo_name=personal-website
+            - generic [ref=e605]: No packages published
+          - generic [ref=e607]:
+            - heading "Contributors 1" [level=2] [ref=e608]:
+              - link "Contributors 1" [ref=e609] [cursor=pointer]:
+                - /url: /lazycatzzzzz/personal-website/graphs/contributors
+                - text: Contributors
+                - generic "1" [ref=e610]
+            - list [ref=e611]:
+              - listitem [ref=e612]:
+                - link "@lazycatzzzzz" [ref=e613] [cursor=pointer]:
+                  - /url: https://github.com/lazycatzzzzz
+                  - img "@lazycatzzzzz" [ref=e614]
+                - link "lazycatzzzzz lazycatzzz" [ref=e616] [cursor=pointer]:
+                  - /url: https://github.com/lazycatzzzzz
+                  - strong [ref=e617]: lazycatzzzzz
+                  - text: lazycatzzz
+          - generic [ref=e619]:
+            - heading "Languages" [level=2] [ref=e620]
+            - list [ref=e626]:
+              - listitem [ref=e627]:
+                - link "TypeScript 94.4%" [ref=e628] [cursor=pointer]:
+                  - /url: /lazycatzzzzz/personal-website/search?l=typescript
+                  - img [ref=e629]
+                  - generic [ref=e631]: TypeScript
+                  - generic [ref=e632]: 94.4%
+              - listitem [ref=e633]:
+                - link "CSS 4.6%" [ref=e634] [cursor=pointer]:
+                  - /url: /lazycatzzzzz/personal-website/search?l=css
+                  - img [ref=e635]
+                  - generic [ref=e637]: CSS
+                  - generic [ref=e638]: 4.6%
+              - listitem [ref=e639]:
+                - link "JavaScript 1.0%" [ref=e640] [cursor=pointer]:
+                  - /url: /lazycatzzzzz/personal-website/search?l=javascript
+                  - img [ref=e641]
+                  - generic [ref=e643]: JavaScript
+                  - generic [ref=e644]: 1.0%
+  - contentinfo [ref=e646]:
+    - heading "Footer" [level=2] [ref=e647]
+    - generic [ref=e648]:
+      - generic [ref=e649]:
+        - link "GitHub Homepage" [ref=e650] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e651]
+        - generic [ref=e653]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e654]:
+        - heading "Footer navigation" [level=3] [ref=e655]
+        - list "Footer navigation" [ref=e656]:
+          - listitem [ref=e657]:
+            - link "Terms" [ref=e658] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e659]:
+            - link "Privacy" [ref=e660] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e661]:
+            - link "Security" [ref=e662] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e663]:
+            - link "Status" [ref=e664] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e665]:
+            - link "Community" [ref=e666] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e667]:
+            - link "Docs" [ref=e668] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e669]:
+            - link "Contact" [ref=e670] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e671]:
+            - button "Manage cookies" [ref=e673] [cursor=pointer]
+          - listitem [ref=e674]:
+            - button "Do not share my personal information" [ref=e676] [cursor=pointer]

@@ -1,0 +1,30 @@
+[  118141ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.deepseek.com/chat/completions:0
+[  118142ms] [ERROR] DeepSeek API error 401: {"error":{"message":"Authentication Fails, Your api key: ****f77a is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}} @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  118146ms] [ERROR] chatWithCat error: Error: API 401
+    at h (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:518)
+    at async p (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:2530) @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  126899ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.deepseek.com/chat/completions:0
+[  126899ms] [ERROR] DeepSeek API error 401: {"error":{"message":"Authentication Fails, Your api key: ****f77a is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}} @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  126899ms] [ERROR] chatWithCat error: Error: API 401
+    at h (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:518)
+    at async p (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:2530) @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  269774ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.deepseek.com/chat/completions:0
+[  269776ms] [ERROR] DeepSeek API error 401: {"error":{"message":"Authentication Fails, Your api key: ****f77a is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}} @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  269776ms] [ERROR] chatWithCat error: Error: API 401
+    at h (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:518)
+    at async p (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:2530) @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  280332ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.deepseek.com/chat/completions:0
+[  280332ms] [ERROR] DeepSeek API error 401: {"error":{"message":"Authentication Fails, Your api key: ****f77a is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}} @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  280332ms] [ERROR] chatWithCat error: Error: API 401
+    at h (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:518)
+    at async p (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:2530) @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  289819ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.deepseek.com/chat/completions:0
+[  289820ms] [ERROR] DeepSeek API error 401: {"error":{"message":"Authentication Fails, Your api key: ****f77a is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}} @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  289821ms] [ERROR] chatWithCat error: Error: API 401
+    at h (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:518)
+    at async p (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:2530) @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  295404ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.deepseek.com/chat/completions:0
+[  295407ms] [ERROR] DeepSeek API error 401: {"error":{"message":"Authentication Fails, Your api key: ****f77a is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}} @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
+[  295407ms] [ERROR] chatWithCat error: Error: API 401
+    at h (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:518)
+    at async p (https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:9:2530) @ https://lazycatzzzzz.github.io/personal-website/_next/static/chunks/0izr~1x_0q4mg.js:8
